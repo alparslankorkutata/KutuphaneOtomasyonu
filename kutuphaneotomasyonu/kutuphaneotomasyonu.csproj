@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{508B64AE-8242-4F08-99F7-A683EB717792}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kutuphaneotomasyonu</RootNamespace>
+    <AssemblyName>kutuphaneotomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormUyeGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeGiris.Designer.cs">
+      <DependentUpon>FormUyeGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminGiris.Designer.cs">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGirisİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisİslemleri.Designer.cs">
+      <DependentUpon>FrmGirisİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKitapIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKitapIslemleri.Designer.cs">
+      <DependentUpon>FrmKitapIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMisafirFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMisafirFormu.Designer.cs">
+      <DependentUpon>FrmMisafirFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullanıcıKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullanıcıKayıt.Designer.cs">
+      <DependentUpon>FrmKullanıcıKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOduncVerme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOduncVerme.Designer.cs">
+      <DependentUpon>FrmOduncVerme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonelGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelGiris.Designer.cs">
+      <DependentUpon>FrmPersonelGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUye.Designer.cs">
+      <DependentUpon>FrmUye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUyeIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUyeIslemleri.Designer.cs">
+      <DependentUpon>FrmUyeIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormUyeGiris.resx">
+      <DependentUpon>FormUyeGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminGiris.resx">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGirisİslemleri.resx">
+      <DependentUpon>FrmGirisİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKitapIslemleri.resx">
+      <DependentUpon>FrmKitapIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMisafirFormu.resx">
+      <DependentUpon>FrmMisafirFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullanıcıKayıt.resx">
+      <DependentUpon>FrmKullanıcıKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOduncVerme.resx">
+      <DependentUpon>FrmOduncVerme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonel.resx">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelGiris.resx">
+      <DependentUpon>FrmPersonelGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUye.resx">
+      <DependentUpon>FrmUye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUyeIslemleri.resx">
+      <DependentUpon>FrmUyeIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cntDFvuN3QPy0az7zKH52V3wy1Q.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kutuphaneveritabanı.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\delete-icon1.png" />
+    <None Include="Resources\şşşş.png" />
+    <None Include="Resources\dddd.png" />
+    <None Include="Resources\Close-iconssfs.png" />
+    <None Include="Resources\ccc.png" />
+    <None Include="Resources\check-icon %281%29.png" />
+    <None Include="Resources\delete-icon.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\aaaaa.png" />
+    <None Include="Resources\yeni.png" />
+    <None Include="Resources\check-icon.png" />
+    <None Include="Resources\kutuphane %281%29.jpg" />
+    <None Include="Resources\indir.jpg" />
+    <None Include="Resources\libr.jpg" />
+    <None Include="Resources\strahovsk-klter-cek-cumhuriyeti_780x519-a86q1qjlry.jpg" />
+    <None Include="Resources\unnamed.jpg" />
+    <None Include="Resources\kutuphane3-768x1024-1.jpg" />
+    <None Include="Resources\erkanildiz1007.jpg" />
+    <None Include="Resources\444c1_kutuphane_1.jpg" />
+    <None Include="Resources\raw_kutuphane-istatistikleri-yayimlandi_842097715.jpg" />
+    <None Include="Resources\500_avm_de_kutuphane_olacak_h15282_98cbf.jpg" />
+    <None Include="Resources\kutuphane.jpg" />
+    <None Include="Resources\bir_kutuphane_nasil_kurulur_h17751_0f96c.jpg" />
+    <None Include="Resources\search-flat.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
